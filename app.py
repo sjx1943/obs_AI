@@ -11,8 +11,8 @@ app = Flask(__name__)
 def home():
     answer = None
     if request.method == 'POST':
-        user_input = request.form['question']
-        response = chain.invoke({"question": user_input})
+        users_input = request.form['question']
+        response = chain.invoke({"question": users_input})
         answer = response
     return render_template('index.html', answer=answer)
 
