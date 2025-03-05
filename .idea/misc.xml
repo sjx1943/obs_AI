@@ -20,5 +20,5 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.9.21 (sftp://root@172.245.187.133:22/root/pythonenv/langchain-env/bin/python3)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (sg_langchain_app)" project-jdk-type="Python SDK" />
 </project>
