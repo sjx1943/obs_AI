@@ -1,4 +1,4 @@
-# 测试脚本
+# 测试脚本，测试ocr的基本性能
 import cv2
 import pytesseract
 
