@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*build/
+*develop-eggs/
+*dist/
+*downloads/
+*eggs/
+*.egg-info/
+*lib/
+*lib64/
+*parts/
+*sdist/
+*var/
+*wheels/
+*.egg
+*instance/
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+# Virtualenv
+.venv/
+venv/
+ENV/
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+# Secrets
+.env
+*.env
+# Data & Media
+data/uploads/
+data/recordings/
+data/index.faiss
+data/meta.jsonl
+# Ollama artifacts
+ollama-linux-amd64.tgz
+bin/
+lib/
+# Logs
+logs/ollama.log
+*.log

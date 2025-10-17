@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm_study_assistant"
+version = "1.0.0"
+authors = [
+  { name="Your Name", email="you@example.com" },
+]
+description = "A learning assistant with RAG and OBS integration."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "python-dotenv",
+    "pydantic",
+    "sentence-transformers",
+    "faiss-cpu",
+    "langchain",
+    "easyocr",
+    "opencv-python",
+    "obsws-python",
+    "python-multipart",
+    "aiofiles",
+    "docx2txt",
+    "pandas",
+    "openpyxl",
+    "ollama"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/your-repo/llm-study-assistant"
+"Bug Tracker" = "https://github.com/your-repo/llm-study-assistant/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

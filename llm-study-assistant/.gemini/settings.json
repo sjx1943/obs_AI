@@ -1,0 +1,8 @@
+{
+  "context": {
+    "includeDirectories": ["./logs"]
+  },
+  "aliases": {
+    "finish_today": "作为AI助手，我的目标是完成今日的收尾工作。我将执行以下4项操作：\n1. Update the development plan in @logs/TODO.md using the `mcp-tasks` tool, 不要修改或删除其它任务项.\n2. Append a summary of the day's work to the development log at @logs/development_log.md.\n3. Update the GEMINI.md project memory file to reflect the current project state.\n4. Commit and push all changes to the origin/master branch of the remote repository using the commit message ser {{今日日期}}."
+  }
+}

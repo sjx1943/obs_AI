@@ -1,0 +1,37 @@
+# 基础框架
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic>=2.4.0
+python-dotenv==1.0.0
+
+# 数据处理
+numpy==1.26.4
+pandas>=2.0.3
+tqdm==4.66.1
+
+# 文档解析
+pdfplumber==0.10.3
+python-docx==1.1.0
+openpyxl==3.1.2
+
+# 向量搜索和机器学习
+sentence-transformers>=2.2.2
+faiss-cpu==1.11.0
+
+# LLM客户端
+openai>=1.30.0
+
+# OBS集成
+obsws-python==1.6.0
+websocket-client==1.6.4
+
+# 图像处理（可选，用于OCR）
+Pillow==10.0.1
+pytesseract==0.3.10
+easyocr==1.7.1
+opencv-python-headless==4.9.0.80
+
+# 其他工具
+requests==2.31.0
+aiofiles==23.2.0
+python-multipart==0.0.6
