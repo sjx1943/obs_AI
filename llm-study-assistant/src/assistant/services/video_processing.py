@@ -16,7 +16,15 @@ logger = logging.getLogger(__name__)
 
 # 初始化OCR读取器 (仅在首次调用时加载模型)
 # 支持中文简体和英文
-reader = easyocr.Reader(['ch_sim', 'en'], gpu=False) 
+# 检查是否可以使用GPU加速
+try:
+    import torch
+    use_gpu = torch.backends.mps.is_available() and torch.backends.mps.is_built()
+    print(f"GPU acceleration available: {use_gpu}")
+except:
+    use_gpu = False
+    
+reader = easyocr.Reader(['ch_sim', 'en'], gpu=use_gpu) 
 
 def extract_text_from_video(video_path: str, interval_seconds: int = 3) -> str:
     """

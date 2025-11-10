@@ -19,10 +19,11 @@ def make_sources(objs: List[Dict]) -> str:
     """Formats retrieved chunks into a context string for the model."""
     if not objs:
         return "No relevant documents found."
-    lines = [
-        f"[{d['doc_id']}#{d['chunk_id']}] (Score: {d.get('score', 0.0):.2f}) {d['text'].replace('\n', ' ')[:200]}..."
-        for d in objs
-    ]
+    lines = []
+    for d in objs:
+        text_preview = d['text'].replace('\n', ' ')[:200]
+        line = f"[{d['doc_id']}#{d['chunk_id']}] (Score: {d.get('score', 0.0):.2f}) {text_preview}..."
+        lines.append(line)
     return "\n".join(lines)
 
 class RAGPipeline:

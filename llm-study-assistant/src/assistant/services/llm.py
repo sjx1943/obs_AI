@@ -13,7 +13,7 @@ class LLMClient:
     def __init__(self):
         base = os.getenv("OPENAI_API_BASE", "http://localhost:11434/v1")
         key = os.getenv("OPENAI_API_KEY", "ollama")
-        self.model = os.getenv("LLM_MODEL", "llama3.2:1b-instruct-q4_0")
+        self.model = os.getenv("LLM_MODEL", "qwen2.5:3b")
         if not base or not self.model:
             raise RuntimeError("Please set OPENAI_API_BASE and LLM_MODEL in .env")
         
