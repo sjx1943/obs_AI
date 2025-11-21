@@ -33,6 +33,7 @@ DATA_DIR = os.getenv("DATA_DIR", os.path.join(PROJECT_ROOT, "data"))
 UPLOAD_DIR = os.path.join(DATA_DIR, "uploads")
 RECORDING_DIR = os.getenv("RECORDING_OUTPUT_DIR", os.path.join(DATA_DIR, "recordings"))
 
+# 确保所有必需的目录都存在
 for directory in [DATA_DIR, UPLOAD_DIR, RECORDING_DIR]:
     os.makedirs(directory, exist_ok=True)
 

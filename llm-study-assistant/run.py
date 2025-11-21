@@ -1,6 +1,10 @@
 import os
+import sys
 import uvicorn
 from dotenv import load_dotenv
+
+# 添加src目录到Python路径，确保可以导入assistant模块
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
 def main():
     """

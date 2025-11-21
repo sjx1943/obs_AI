@@ -1,0 +1,74 @@
+[
+  {
+    "config": {
+      "name": "默认参数",
+      "TOP_K": 5,
+      "CHUNK_SIZE": 500,
+      "CHUNK_OVERLAP": 100
+    },
+    "average_accuracy": 0.0
+  },
+  {
+    "config": {
+      "name": "TOP_K=3",
+      "TOP_K": 3,
+      "CHUNK_SIZE": 500,
+      "CHUNK_OVERLAP": 100
+    },
+    "average_accuracy": 0.0
+  },
+  {
+    "config": {
+      "name": "TOP_K=10",
+      "TOP_K": 10,
+      "CHUNK_SIZE": 500,
+      "CHUNK_OVERLAP": 100
+    },
+    "average_accuracy": 0.0
+  },
+  {
+    "config": {
+      "name": "CHUNK_SIZE=250",
+      "TOP_K": 5,
+      "CHUNK_SIZE": 250,
+      "CHUNK_OVERLAP": 50
+    },
+    "average_accuracy": 0.0
+  },
+  {
+    "config": {
+      "name": "CHUNK_SIZE=1000",
+      "TOP_K": 5,
+      "CHUNK_SIZE": 1000,
+      "CHUNK_OVERLAP": 200
+    },
+    "average_accuracy": 0.0
+  },
+  {
+    "config": {
+      "name": "CHUNK_OVERLAP=50",
+      "TOP_K": 5,
+      "CHUNK_SIZE": 500,
+      "CHUNK_OVERLAP": 50
+    },
+    "average_accuracy": 0.0
+  },
+  {
+    "config": {
+      "name": "CHUNK_OVERLAP=200",
+      "TOP_K": 5,
+      "CHUNK_SIZE": 500,
+      "CHUNK_OVERLAP": 200
+    },
+    "average_accuracy": 0.0
+  },
+  {
+    "config": {
+      "name": "综合优化",
+      "TOP_K": 3,
+      "CHUNK_SIZE": 250,
+      "CHUNK_OVERLAP": 50
+    },
+    "average_accuracy": 0.0
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "qwen2.5:3b": {
+    "原始RAGPipeline": 0.20833333333333331,
+    "优化后RAGPipeline": 0.0,
+    "简化版优化RAGPipeline": 0.0
+  },
+  "qwen2.5:3b-instruct-q4_0": {
+    "原始RAGPipeline": 0.0,
+    "优化后RAGPipeline": 0.0,
+    "简化版优化RAGPipeline": 0.0
+  },
+  "llama3.2:3b-instruct-q4_0": {
+    "原始RAGPipeline": 0.33333333333333337,
+    "优化后RAGPipeline": 0.375,
+    "简化版优化RAGPipeline": 0.08333333333333333
+  },
+  "gemma2:2b-instruct-q4_0": {
+    "原始RAGPipeline": 0.125,
+    "优化后RAGPipeline": 0.125,
+    "简化版优化RAGPipeline": 0.0
+  }
+}
